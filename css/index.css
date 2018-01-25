@@ -1,0 +1,264 @@
+.noDisplay {
+  display: none !important;
+}
+
+section {
+  min-height: 100vh;
+  margin: 0 5%;
+}
+
+section:nth-child(odd) {
+  background-color: grey;
+}
+
+section h1 {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+nav {
+  margin-bottom: 0 !important;
+}
+
+nav img {
+  height: 50px;
+  border-radius: 5px;
+}
+
+.navbar-right a {
+  padding: 0 !important;
+  padding-right: 10px !important;
+}
+
+.nav-update-active {
+  font-weight: 600;
+  color: #2B7A78 !important;
+}
+
+#intro {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  background-image: url("../img/drone.png");
+}
+
+#intro h1 {
+  font-size: calc(30px + 150%);
+}
+
+#intro h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+#home,
+#home_facts {
+  background-color: #fbfccf;
+}
+
+#home>div {
+  height: 100%;
+}
+
+#home_img {
+  width: 50%;
+  float: left;
+}
+
+#home img {
+  height: 100%;
+  max-width: 100%;
+}
+
+#home_txt {
+  width: 50%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
+}
+
+#home_txt h1 {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#btn1 {
+  width: 150px;
+  display: inline;
+  padding: 10px;
+  margin-top: 10px;
+  background: white;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#home_facts {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home_facts>p:first-of-type {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+#home_facts>p:last-of-type {
+  width: 80%;
+}
+
+#facts {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#facts>div {
+  width: 25%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 10px;
+}
+
+#facts>div p:first-of-type {
+  font-weight: bold;
+  font-size: 1.8em;
+  margin-bottom: 0;
+}
+
+#info {
+  padding: 2% 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  background-image: url("../img/green.jpg");
+}
+
+#info h1 {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(51, 51, 51);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#info div {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+#info div div {
+  padding: 10px;
+  margin: 10px 20px;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#info div div p:first-of-type {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#location {
+  padding: 3%;
+  background-color: white;
+}
+
+#location h4 {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#location div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#map {
+  border: 0;
+  width: 1000;
+  height: 400;
+  margin: 20px;
+}
+
+#rates {
+  background-color: #e5ebcc;
+  height: auto;
+  padding: 3%;
+}
+
+#rates p {
+  margin: 20px 0;
+}
+
+#rates ul {
+  column-count: 2;
+  margin: 20px 0;
+}
+
+#rates li {
+  padding: 3px;
+  width: 80%;
+}
+
+#rates table {
+  width: 100%;
+}
+
+#rates td,
+#rates th {
+  border: 1px solid white;
+  text-align: right;
+  padding: 8px;
+}
+
+#rates td:first-of-type {
+  text-align: left!important;
+}
+
+#rates tr:nth-child(odd) {
+  background-color: white;
+}
+
+#rates tr:nth-child(even) {
+  background-color: #C5CDA4;
+}
+
+#gallery {
+  text-align: center;
+}
+
+#gallery>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#gallery>div img {
+  width: 250px;
+  margin: 15px;
+}
