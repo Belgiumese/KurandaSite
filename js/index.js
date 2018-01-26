@@ -5,13 +5,14 @@ $(document).ready(function() {
   initNavBar();
   initPhotoSwipe('.gallery');
   angrybois_whyyoudeleteme();
-
-
 });
 
 function angrybois_whyyoudeleteme() {
+    var clicked = false;
     $('#btn1').click(function() {
         $('#home_facts').toggleClass('noDisplay');
+        $('#btn1').toggleClass('clicked');
+        $('#more, #less').toggleClass('hide');
     });
 }
 
