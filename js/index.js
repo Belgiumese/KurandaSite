@@ -1,8 +1,6 @@
 'use strict';
 
 $(document).ready(function() {
-  initSmoothScroll();
-  initNavBar();
   initPhotoSwipe('.gallery');
   angrybois_whyyoudeleteme();
 });
@@ -16,7 +14,7 @@ function angrybois_whyyoudeleteme() {
     });
 }
 
-function initSmoothScroll() {
+function disableViewEventOnScroll() {
   smoothScroll.setBefore(function() {
     simpleInView.enable(false);
   });
@@ -27,7 +25,7 @@ function initSmoothScroll() {
   simpleInView.forceUpdate();
 }
 
-function initNavBar() {
+function initNavBarEvent() {
   $(window).scroll(checkUpdateScroll);
   checkUpdateScroll();
 }

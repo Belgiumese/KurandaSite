@@ -1,0 +1,4 @@
+@font-face {
+  font-family: Fibre;
+  src: url('../fonts/fibre-font.otf') format('opentype'), url('../fonts/fibre-font.woff') format('woff');
+}
