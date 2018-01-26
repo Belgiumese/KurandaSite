@@ -165,8 +165,6 @@
         <p>Tourism</p>
         <p>We have tourist pamphlets available for your use and can suggest places to suit your interests.</p>
       </div>
-    </div>
-    <div>
       <div>
         <p>Wildlife Caregivers</p>
         <p>We are both wildlife caregivers caring mainly for birds and often have a variety in care at any given time.</p>
@@ -282,31 +280,106 @@
   </section>
   <section id="gallery" class="nav-update" data-nav-update="#galleryNav">
     <h1>Gallery</h1>
-    <div class="image-set">
-      <a href="img/bed.jpg" data-lightbox="1">
-        <img src="img/bed.jpg">
-        <p>Zambian Bedroom</p>
-      </a>
-      <a href="img/pool.jpg" data-lightbox="1">
-        <img src="img/pool.jpg">
-        <p>Pool</p>
-      </a>
-      <a href="img/front.jpg" data-lightbox="1">
-        <img src="img/front.jpg">
-        <p>Front</p>
-      </a>
-      <a href="img/bed.jpg" data-lightbox="1">
-        <img src="img/bed.jpg">
-        <p>Zambian Bedroom</p>
-      </a>
-      <a href="img/pool.jpg" data-lightbox="1">
-        <img src="img/pool.jpg">
-        <p>Pool</p>
-      </a>
-      <a href="img/front.jpg" data-lightbox="1">
-        <img src="img/front.jpg">
-        <p>Front</p>
-      </a>
+    <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+      <figure id="hoverTest" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x1024">
+          <img src="img/bed.jpg" itemprop="thumbnail" alt="A bed" />
+        </a>
+        <figcaption itemprop="caption description">Zambian Bedroom</figcaption>
+
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/pool.jpg" itemprop="contentUrl" data-size="964x1024">
+          <img src="img/pool.jpg" itemprop="thumbnail" alt="The pool" />
+        </a>
+        <figcaption itemprop="caption description">The Pool</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/gate.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Main Entrance</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x768">
+          <img src="img/lodge.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">The Cottage</figcaption>
+      </figure>
+
+
+    </div>
+    <!-- Root element of PhotoSwipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            <i id="arrowLeft" class="fas fa-arrow-left"></i>
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            <i id="arrowRight" class="arrow fas fa-arrow-right"></i>
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
   </section>
   <section id="links" class="nav-update" data-nav-update="#linksNav">
@@ -315,107 +388,7 @@
   </section>
   <section id="contact" class="nav-update" data-nav-update="#contactNav">
   </section>
-  <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-    <figure id="hoverTest" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x1024">
-        <img src="img/bed.jpg" itemprop="thumbnail" alt="A bed" />
-      </a>
-      <figcaption itemprop="caption description">Zambian Bedroom</figcaption>
-
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="img/pool.jpg" itemprop="contentUrl" data-size="964x1024">
-        <img src="img/pool.jpg" itemprop="thumbnail" alt="The pool" />
-      </a>
-      <figcaption itemprop="caption description">The Pool</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x683">
-        <img src="img/gate.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Main Entrance</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x768">
-        <img src="img/lodge.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">The Cottage</figcaption>
-    </figure>
-
-
-  </div>
-  <!-- Root element of PhotoSwipe -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-           It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-      <!-- Container that holds slides. 
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-      <div class="pswp__container">
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-        <div class="pswp__item"></div>
-      </div>
-
-      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-      <div class="pswp__ui pswp__ui--hidden">
-
-        <div class="pswp__top-bar">
-
-          <!--  Controls are self-explanatory. Order can be changed. -->
-
-          <div class="pswp__counter"></div>
-
-          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-          <button class="pswp__button pswp__button--share" title="Share"></button>
-
-          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-          <!-- element will get class pswp__preloader--active when preloader is running -->
-          <div class="pswp__preloader">
-            <div class="pswp__preloader__icn">
-              <div class="pswp__preloader__cut">
-                <div class="pswp__preloader__donut"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-          <div class="pswp__share-tooltip"></div>
-        </div>
-
-        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-          <i id="arrowLeft" class="fas fa-arrow-left"></i>
-        </button>
-
-        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-          <i id="arrowRight" class="arrow fas fa-arrow-right"></i>
-        </button>
-
-        <div class="pswp__caption">
-          <div class="pswp__caption__center"></div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
 </body>
 
 </html>

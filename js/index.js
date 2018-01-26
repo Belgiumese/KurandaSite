@@ -4,7 +4,14 @@ $(document).ready(function() {
   disableViewEventOnScroll();
   initNavBarEvent();
   initPhotoSwipe('.gallery');
+  angrybois_whyyoudeleteme();
 });
+
+function angrybois_whyyoudeleteme() {
+  $('#btn1').click(function() {
+    $('#home_facts').toggleClass('noDisplay');
+  });
+}
 
 function disableViewEventOnScroll() {
   smoothScroll.setBefore(function() {
@@ -59,7 +66,7 @@ function checkRemoveClass(element, className) {
 // Photoswipe default function
 function initPhotoSwipe(gallerySelector) {
 
-  // parse slide data (url, title, size ...) from DOM elements 
+  // parse slide data (url, title, size ...) from DOM elements
   // (children of gallerySelector)
   var parseThumbnailElements = function(el) {
     var thumbElements = el.childNodes,
@@ -74,7 +81,7 @@ function initPhotoSwipe(gallerySelector) {
 
       figureEl = thumbElements[i]; // <figure> element
 
-      // include only element nodes 
+      // include only element nodes
       if (figureEl.nodeType !== 1) {
         continue;
       }
@@ -219,7 +226,7 @@ function initPhotoSwipe(gallerySelector) {
     // PhotoSwipe opened from URL
     if (fromURL) {
       if (options.galleryPIDs) {
-        // parse real index when custom PIDs are used 
+        // parse real index when custom PIDs are used
         // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
         for (var j = 0; j < items.length; j++) {
           if (items[j].pid == index) {
