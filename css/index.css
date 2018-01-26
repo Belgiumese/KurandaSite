@@ -61,6 +61,14 @@ nav img {
   font-weight: 600;
 }
 
+.navbar-right {
+  text-align: center;
+}
+
+#phone {
+  padding: 15px;
+}
+
 #intro {
   margin: 0;
   display: flex;
@@ -75,7 +83,8 @@ nav img {
 }
 
 #intro h1 {
-  font-size: calc(30px + 150%);
+  font-size: calc(50px + 150%);
+  font-family: Fibre;
 }
 
 #intro h2 {
