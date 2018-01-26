@@ -4,12 +4,16 @@ $(document).ready(function() {
   initSmoothScroll();
   initNavBar();
   initPhotoSwipe('.gallery');
-  
-  $('#btn1').click(function() {
-      $('#home_facts').toggleClass('noDisplay');
-  });
+  angrybois_whyyoudeleteme();
+
 
 });
+
+function angrybois_whyyoudeleteme() {
+    $('#btn1').click(function() {
+        $('#home_facts').toggleClass('noDisplay');
+    });
+}
 
 function initSmoothScroll() {
   smoothScroll.setBefore(function() {
