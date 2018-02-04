@@ -3,8 +3,7 @@
 }
 
 section {
-  min-height: 100vh;
-  margin: 0 5%;
+  margin: 0 30px;
 }
 
 #info, #location, #rates, #gallery, #links, #wildlife, #contact, #home_facts {
@@ -268,8 +267,8 @@ nav img {
 
 #map {
   border: 0;
-  width: 1000;
-  height: 400;
+  width: 1000px;
+  height: 400px;
   margin: 20px;
 }
 
@@ -298,25 +297,21 @@ nav img {
 
 #rates table {
   width: 100%;
+  margin-top: 20px;
+}
+
+#rates th {
+    background: #61C2B3;
+    color: white;
 }
 
 #rates td,
 #rates th {
-  border: 1px solid white;
-  text-align: right;
-  padding: 8px;
-}
-
-#rates td:first-of-type {
-  text-align: left!important;
+  padding: 8px 15px;
 }
 
 #rates tr:nth-child(odd) {
-  background-color: white;
-}
-
-#rates tr:nth-child(even) {
-  background-color: #C5CDA4;
+  background-color: #E8E8E8;
 }
 
 .gallery {
@@ -331,15 +326,15 @@ nav img {
 }
 
 .gallery figure {
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 1em 0.4em;
+  margin: 0.5em 0.8em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .gallery figure:hover {
   transform: scale(1.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .gallery img {
