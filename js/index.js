@@ -4,14 +4,14 @@ $(document).ready(function() {
   disableViewEventOnScroll();
   initNavBarEvent();
   initPhotoSwipe('.gallery');
-  angrybois_whyyoudeleteme();
+  //angrybois_whyyoudeleteme();
 });
 
-function angrybois_whyyoudeleteme() {
-  $('#btn1').click(function() {
-    $('#home_facts').toggleClass('noDisplay');
-  });
-}
+// function angrybois_whyyoudeleteme() {
+//   $('#btn1').click(function() {
+//     $('#home_facts').toggleClass('noDisplay');
+//   });
+// }
 
 function disableViewEventOnScroll() {
   smoothScroll.setBefore(function() {
@@ -38,10 +38,10 @@ function checkUpdateScroll() {
       height = $(window).height();
 
     requestAnimationFrame(function() {
-      if (scrolledLessthan(scrollAmount, height, 8)) {
-        checkRemoveClass($('.navbar'), 'scrollNav');
+      if (scrolledLessthan(scrollAmount, height, 5)) {
+        checkRemoveClass($('.navContain'), 'scrollNav');
       } else {
-        checkAddClass($('.navbar'), 'scrollNav');
+        checkAddClass($('.navContain'), 'scrollNav');
       }
       checkUpdateScroll.updating = false;
     });

@@ -1,16 +1,21 @@
-.noDisplay {
-  display: none !important;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 section {
-  min-height: 100vh;
   margin: 0 5%;
 }
 
-section:nth-child(odd) {
-  background-color: grey;
-#info, #location, #rates, #gallery, #links, #wildlife, #contact {
-    padding: 2em;
+#info,
+#location,
+#rates,
+#gallery,
+#links,
+#wildlife,
+#contact {
+  padding: 2em;
 }
 
 section h1 {
@@ -26,32 +31,70 @@ nav img {
   border-radius: 5px;
 }
 
-.navbar-right a {
-  padding: 0 !important;
-  padding-right: 10px !important;
+.navContain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar {
-  background: transparent;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3) 100%);
+  border-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+  transition: all 0.3s ease-in-out;
+}
+
+.navRight {
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+.navContain:after {
+  content: "";
+  background-color: transparent;
+}
+
+.navContain:not(.scrollNav):after {
+  position: relative;
+  content: "";
+  height: 30px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent);
   transition: all 0.3s ease-in-out;
 }
 
 .navbar a {
+  display: inline-block;
   color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 15px;
+  margin: 0.1em;
+  padding: 1.1em 0.7em;
 }
 
 .navbar.scrollNav .nav-update-active {
-  color: #2B7A78 !important;
+  color: rgba(43, 122, 119, 0.6) !important;
 }
 
 .nav-update-active {
-  font-weight: 600;
-  color: rgb(187, 223, 221) !important;
+  color: rgba(43, 122, 119, 0.6) !important;
 }
 
-.scrollNav {
-  background: white !important;
-  border-bottom: 1px solid rgba(163, 161, 161, 0.7) !important;
+.scrollNav .navbar {
+  background: white;
+  border-bottom: 1px solid rgba(163, 161, 161, 0.7);
 }
 
 .scrollNav a {
@@ -60,7 +103,10 @@ nav img {
 
 .scrollNav a:hover:not(.nav-update-active) {
   color: rgba(43, 122, 119, 0.6) !important;
-  font-weight: 600;
+}
+
+.scrollNav #phone {
+  color: black;
 }
 
 .navbar-right {
@@ -68,7 +114,13 @@ nav img {
 }
 
 #phone {
-  padding: 15px;
+  margin: auto;
+  color: white;
+  padding: 5px;
+}
+
+#phone>span {
+  margin-left: 3px;
 }
 
 #intro {
@@ -87,40 +139,34 @@ nav img {
 #intro h1 {
   font-size: calc(50px + 150%);
   font-family: Fibre;
+  margin-bottom: 0.6em;
 }
 
 #intro h2 {
   font-family: 'Roboto', sans-serif;
 }
 
-#intro{
-    height: 100vh;
+#intro {
+  height: 100vh;
 }
 
-#home{
-    min-height: 100vh;
-}
-
-#home>div {
-  height: 100%;
+#home {
+  position: relative;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #home_img {
+  display: inline-block;
   width: 50%;
-  float: left;
-}
-
-#home img {
-  height: 100vh;
-  max-width: 100%;
 }
 
 #home_txt {
-  width: 50%;
-  float: right;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 49%;
+  display: inline-block;
   padding: 5%;
 }
 
@@ -129,13 +175,23 @@ nav img {
 }
 
 #btn1 {
-  width: 150px;
-  display: inline;
+  display: block;
+  width: 130px;
   padding: 10px;
-  margin-top: 10px;
   background: white;
-  border: 2px solid black;
+  border: 2px solid rgb(46, 117, 84);
+  color: rgb(23, 77, 52);
   text-align: center;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#btn1:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(46, 117, 84);
+  border-color: rgb(46, 117, 84);
 }
 
 #home_facts {
@@ -144,6 +200,7 @@ nav img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 #home_facts>p:first-of-type {
@@ -178,6 +235,11 @@ nav img {
 }
 
 #info {
+  position: relative;
+  top: -4px;
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,19 +256,18 @@ nav img {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-#info > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+#info>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 12px;
 }
 
-#info > div::after {
+#info>div::after {
   content: "";
   width: 250px;
-
-    padding: 20px;
-    margin: 10px 30px;
+  padding: 20px;
+  margin: 10px 30px;
 }
 
 #info div div {
@@ -230,11 +291,11 @@ nav img {
 }
 
 #location {
-    height: auto;
+  height: auto;
   background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #location h4 {
@@ -259,8 +320,9 @@ nav img {
   height: auto;
 }
 
-#rates h1, #gallery h1{
-    text-align: center;
+#rates h1,
+#gallery h1 {
+  text-align: center;
 }
 
 #rates p {
@@ -289,7 +351,7 @@ nav img {
 }
 
 #rates td:first-of-type {
-  text-align: left!important;
+  text-align: left !important;
 }
 
 #rates tr:nth-child(odd) {
@@ -312,8 +374,8 @@ nav img {
 }
 
 .gallery figure {
-  padding: 0.5em;
-  margin: 0.5em;
+  padding: 0.45em;
+  margin: 0.45em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -324,10 +386,15 @@ nav img {
 }
 
 .gallery img {
-  width: 190px;
-  height: 175px;
+  width: 200px;
+  height: 180px;
   object-fit: cover;
-  margin: 15px;
+  margin: 8px;
+  border-radius: 2px;
+}
+
+.gallery figcaption {
+  font-size: 18px;
 }
 
 #arrowLeft,

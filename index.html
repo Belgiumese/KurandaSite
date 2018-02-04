@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="js/smoothScroll.js"></script>
   <script src="js/inView.js"></script>
@@ -15,6 +14,7 @@
   <script src="js/photoswipe.min.js"></script>
   <script src="js/photoswipe-ui-default.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/expand.js"></script>
   <link rel="stylesheet" href="css/photoswipe.css">
   <link rel="stylesheet" href="css/default-skin.css">
   <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Roboto:400,500" rel="stylesheet">
@@ -23,126 +23,101 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
+  <div class="navContain">
+    <nav class="navbar">
+      <div class="navLeft">
         <a class="navbar-brand" href="#">Kuranda Lodge</a>
+        <a id="homeNav" href="#home">Home</a>
+        <a id="infoNav" href="#info">Info</a>
+        <a id="locationNav" href="#location">Location</a>
+        <a id="ratesNav" href="#rates">Rooms & Rates</a>
+        <a id="galleryNav" href="#gallery">Gallery</a>
+        <a id="linksNav" href="#links">Links</a>
+        <a id="wildlifeNav" href="#wildlife">Wildlife</a>
+        <a id="contactNav" href="#contact">Contact</a>
       </div>
-      <ul class="nav navbar-nav">
-        <li>
-          <a id="homeNav" href="#home">Home</a>
-        </li>
-        <li>
-          <a id="infoNav" href="#info">Info</a>
-        </li>
-        <li>
-          <a id="locationNav" href="#location">Location</a>
-        </li>
-        <li>
-          <a id="ratesNav" href="#rates">Rooms & Rates</a>
-        </li>
-        <li>
-          <a id="galleryNav" href="#gallery">Gallery</a>
-        </li>
-        <li>
-          <a id="linksNav" href="#links">Links</a>
-        </li>
-        <li>
-          <a id="wildlifeNav" href="#wildlife">Wildlife</a>
-        </li>
-        <li>
-          <a id="contactNav" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li id="phone">
-          <div>
-            <i class="fas fa-phone fa-flip-horizontal"></i>
-            <span>+61 999 999</span>
-          </div>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/dauwepatrick/">
-            <img src="img/fb.png">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="navRight">
+        <div id="phone">
+          <i class="fas fa-phone fa-flip-horizontal"></i>
+          <span>+61 999 999</span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <section id="intro" class="nav-update" data-nav-update=".navbar-brand">
     <h1>Kuranda Ngorongoro Lodge</h1>
     <h2>A Guest House in the rainforest of far North Queensland, Australia</h2>
   </section>
-  <section id="home" class="nav-update" data-nav-update="#homeNav">
-    <div id="home_img">
-      <img src="img/gate.jpg">
-    </div>
-    <div id="home_txt">
-      <h1>Home</h1>
-      <br>
-      <p>Kuranda Ngorongoro Lodge is located in rainforest and 400 metres above Cairns in the cooler climate of the Kuranda
-        Range. The Lodge is owned and managed by Patrick Dauwe and Sue Schwass. Cairns International airport is only 30 minutes
-        away and our mini Ambassador, Fritz the Cockatoo, is ready to welcome you.
+  <div class="showMore">
+    <section id="home" class="nav-update" data-nav-update="#homeNav">
+      <img id="home_img" src="img/gate.jpg">
+      <div id="home_txt">
+        <h1>Home</h1>
         <br>
-        <br>During your stay you may choose to relax on one or two private verandahs, search for wildlife in the evening with
-        your torch out in the neighbourhood, explore Kuranda, a tourist town, or visit the many interesting places to be
-        found on the Atherton Tablelands, the bird watching capital of Australia. The waterfall circuit, Mareeba Wetlands,
-        Undara Lava Tubes, Chillagoe and some amazing caves are found within easy reach of Kuranda. Back on the property,
-        there is the chance to wander along our bush walk circuit which runs alongside the creek.</p>
-      <div id="btn1">See More</div>
-    </div>
-  </section>
-  <section id="home_facts" class="noDisplay">
-    <p>The Wet Tropics World Heritage area contains:</p>
-    <div id="facts">
-      <div>
-        <p>40%</p>
-        <p>of Australia’s bird species</p>
+        <p>Kuranda Ngorongoro Lodge is located in rainforest and 400 metres above Cairns in the cooler climate of the Kuranda
+          Range. The Lodge is owned and managed by Patrick Dauwe and Sue Schwass. Cairns International airport is only 30
+          minutes away and our mini Ambassador, Fritz the Cockatoo, is ready to welcome you.
+          <br>
+          <br>During your stay you may choose to relax on one or two private verandahs, search for wildlife in the evening with
+          your torch out in the neighbourhood, explore Kuranda, a tourist town, or visit the many interesting places to be
+          found on the Atherton Tablelands, the bird watching capital of Australia. The waterfall circuit, Mareeba Wetlands,
+          Undara Lava Tubes, Chillagoe and some amazing caves are found within easy reach of Kuranda. Back on the property,
+          there is the chance to wander along our bush walk circuit which runs alongside the creek.</p>
+        <div id="btn1" class="expand">Show More</div>
       </div>
-      <div>
-        <p>35%</p>
-        <p>of Australia’s mammal species</p>
+    </section>
+    <section id="home_facts" class="more">
+      <p>The Wet Tropics World Heritage area contains:</p>
+      <div id="facts">
+        <div>
+          <p>40%</p>
+          <p>of Australia’s bird species</p>
+        </div>
+        <div>
+          <p>35%</p>
+          <p>of Australia’s mammal species</p>
+        </div>
+        <div>
+          <p>60%</p>
+          <p>Australia’s butterfly species</p>
+        </div>
+        <div>
+          <p>20%</p>
+          <p>of Australia’s reptile species</p>
+        </div>
+        <div>
+          <p>21%</p>
+          <p>of Australia’s cycad species</p>
+        </div>
+        <div>
+          <p>29%</p>
+          <p>of Australia’s frog species</p>
+        </div>
+        <div>
+          <p>40%</p>
+          <p>of Australia’s bird species</p>
+        </div>
+        <div>
+          <p>65%</p>
+          <p>of Australia’s fern species</p>
+        </div>
+        <div>
+          <p>30%</p>
+          <p>of Australia’s orchid species</p>
+        </div>
       </div>
-      <div>
-        <p>60%</p>
-        <p>Australia’s butterfly species</p>
-      </div>
-      <div>
-        <p>20%</p>
-        <p>of Australia’s reptile species</p>
-      </div>
-      <div>
-        <p>21%</p>
-        <p>of Australia’s cycad species</p>
-      </div>
-      <div>
-        <p>29%</p>
-        <p>of Australia’s frog species</p>
-      </div>
-      <div>
-        <p>40%</p>
-        <p>of Australia’s bird species</p>
-      </div>
-      <div>
-        <p>65%</p>
-        <p>of Australia’s fern species</p>
-      </div>
-      <div>
-        <p>30%</p>
-        <p>of Australia’s orchid species</p>
-      </div>
-    </div>
-    <br>
-    <br>
-    <p>The area is home to more than 3000 plant species, 100 species of mammals, 50 species of frogs and more than 370 species
-      of birds. The Wet Tropics has 47 animal species and 227 plant species listed as threatened.
       <br>
-      <br>Regular visitors include Chowchillas, Musky Rat-kangaroos, Striped Possums, Amethystine and Scrub Pythons and Victoria’s
-      Riflebird, one of Australia’s two Birds of Paradise. At night frogs, curlews and pademelons can be seen along with
-      the occasional python. During the day we always see Brush Turkeys and Orange Footed Scrub Fowl and a multitude of butterflies
-      and a huge variety of birds.</p>
-
-  </section>
+      <br>
+      <p>The area is home to more than 3000 plant species, 100 species of mammals, 50 species of frogs and more than 370 species
+        of birds. The Wet Tropics has 47 animal species and 227 plant species listed as threatened.
+        <br>
+        <br>Regular visitors include Chowchillas, Musky Rat-kangaroos, Striped Possums, Amethystine and Scrub Pythons and Victoria’s
+        Riflebird, one of Australia’s two Birds of Paradise. At night frogs, curlews and pademelons can be seen along with
+        the occasional python. During the day we always see Brush Turkeys and Orange Footed Scrub Fowl and a multitude of
+        butterflies and a huge variety of birds.</p>
+    </section>
+  </div>
   <section id="info" class="nav-update" data-nav-update="#infoNav">
     <h1>Information</h1>
     <br>
@@ -283,36 +258,106 @@
     <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
       <figure id="hoverTest" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x1024">
-          <img src="img/bed.jpg" itemprop="thumbnail" alt="A bed" />
+        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/bed_min.jpg" itemprop="thumbnail" alt="A bed" />
         </a>
         <figcaption itemprop="caption description">Zambian Bedroom</figcaption>
 
       </figure>
 
       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/pool.jpg" itemprop="contentUrl" data-size="964x1024">
-          <img src="img/pool.jpg" itemprop="thumbnail" alt="The pool" />
+        <a href="img/pool.jpg" itemprop="contentUrl" data-size="1182x665">
+          <img src="img/pool_min.jpg" itemprop="thumbnail" alt="The pool" />
         </a>
         <figcaption itemprop="caption description">The Pool</figcaption>
       </figure>
 
       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x683">
-          <img src="img/gate.jpg" itemprop="thumbnail" alt="Image description" />
+        <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x1024">
+          <img src="img/gate_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
         <figcaption itemprop="caption description">Main Entrance</figcaption>
       </figure>
 
       <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x768">
-          <img src="img/lodge.jpg" itemprop="thumbnail" alt="Image description" />
+        <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x682">
+          <img src="img/lodge_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
         <figcaption itemprop="caption description">The Cottage</figcaption>
       </figure>
 
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/lodge2.jpg" itemprop="contentUrl" data-size="1024x682">
+          <img src="img/lodge2_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Main House</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/rainforest.jpg" itemprop="contentUrl" data-size="1024x768">
+          <img src="img/rainforest.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Rainforest</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/terrace.jpg" itemprop="contentUrl" data-size="724x1086">
+          <img src="img/terrace_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Cottage Terrace</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/lounge.jpg" itemprop="contentUrl" data-size="1085x724">
+          <img src="img/lounge_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Cottage Lounge</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/lounge2.jpg" itemprop="contentUrl" data-size="1085x724">
+          <img src="img/lounge2_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Cottage Lounge</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/kitchen.jpg" itemprop="contentUrl" data-size="1086x724">
+          <img src="img/kitchen_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/kitchen2.jpg" itemprop="contentUrl" data-size="1086x724">
+          <img src="img/kitchen2_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1086x724">
+          <img src="img/bed2_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Zimbabwaen Bedroom</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/bathroom.jpg" itemprop="contentUrl" data-size="1024x683">
+          <img src="img/bathroom_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Bathroom</figcaption>
+      </figure>
+
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="img/pizza.jpg" itemprop="contentUrl" data-size="1085x724">
+          <img src="img/pizza_min.jpg" itemprop="thumbnail" alt="Image description" />
+        </a>
+        <figcaption itemprop="caption description">Pizza Oven</figcaption>
+      </figure>
 
     </div>
+
     <!-- Root element of PhotoSwipe -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
@@ -387,6 +432,10 @@
   <section id="wildlife" class="nav-update" data-nav-update="#wildlifeNav">
   </section>
   <section id="contact" class="nav-update" data-nav-update="#contactNav">
+    <div class="contactInfo">
+      <header>Contact Details & Address</header>
+
+    </div>
   </section>
 
 </body>

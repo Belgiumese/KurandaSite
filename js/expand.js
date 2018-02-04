@@ -20,8 +20,8 @@
     var wrappers = $('.showMore');
     wrappers.each(function() {
       var wrapper = $(this);
-      var expand = wrapper.children('.expand'),
-        more = wrapper.children('.more'),
+      var expand = wrapper.find('.expand'),
+        more = wrapper.find('.more'),
         moreHeight = more.height(),
         expanded = false;
 
@@ -33,14 +33,14 @@
           expanded = true;
           more.animate({
             height: moreHeight
-          }, 400, 'easeInOutQuad', function() {
+          }, 500, 'easeInOutQuad', function() {
             expand.text('Show Less');
           });
         } else {
           expanded = false;
           more.animate({
             height: 0
-          }, 400, 'easeInOutQuad', function() {
+          }, 500, 'easeInOutQuad', function() {
             expand.text('Show More');
           });
         }
