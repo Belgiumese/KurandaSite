@@ -2,444 +2,428 @@
 <html lang="en">
 
 <head>
-  <title>Kuranda Ngorongoro</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="js/smoothScroll.js"></script>
-  <script src="js/inView.js"></script>
-  <script src="js/navUpdate.js"></script>
-  <script src="js/photoswipe.min.js"></script>
-  <script src="js/photoswipe-ui-default.min.js"></script>
-  <script src="js/index.js"></script>
-  <script src="js/expand.js"></script>
-  <link rel="stylesheet" href="css/photoswipe.css">
-  <link rel="stylesheet" href="css/default-skin.css">
-  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Roboto:400,500" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <title>Kuranda Ngorongoro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="js/smoothScroll.js"></script>
+    <script src="js/inView.js"></script>
+    <script src="js/navUpdate.js"></script>
+    <script src="js/photoswipe.min.js"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/expand.js"></script>
+    <link rel="stylesheet" href="css/photoswipe.css">
+    <link rel="stylesheet" href="css/default-skin.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:900|Roboto:400" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 </head>
 
 <body>
-  <div class="navContain">
-    <nav class="navbar">
-      <div class="navLeft">
-        <a class="navbar-brand" href="#">Kuranda Lodge</a>
-        <a id="homeNav" href="#home">Home</a>
-        <a id="infoNav" href="#info">Info</a>
-        <a id="locationNav" href="#location">Location</a>
-        <a id="ratesNav" href="#rates">Rooms & Rates</a>
-        <a id="galleryNav" href="#gallery">Gallery</a>
-        <a id="linksNav" href="#links">Links</a>
-        <a id="wildlifeNav" href="#wildlife">Wildlife</a>
-        <a id="contactNav" href="#contact">Contact</a>
-      </div>
-      <div class="navRight">
-        <div id="phone">
-          <i class="fas fa-phone fa-flip-horizontal"></i>
-          <span>+61 999 999</span>
-        </div>
-      </div>
-    </nav>
-  </div>
+    <div class="navContain">
+        <nav class="navbar">
+            <div class="navLeft">
+                <a class="navbar-brand" href="#">Kuranda Lodge</a>
+                <a id="homeNav" href="#home">Home</a>
+                <a id="infoNav" href="#info">Info</a>
+                <a id="locationNav" href="#location">Location</a>
+                <a id="ratesNav" href="#rates">Rooms & Rates</a>
+                <a id="galleryNav" href="#gallery">Gallery</a>
+                <a id="linksNav" href="#links">Links</a>
+                <a id="wildlifeNav" href="#wildlife">Wildlife</a>
+                <a id="contactNav" href="#contact">Contact</a>
+            </div>
+            <div class="navRight">
+                <div id="phone">
+                    <i class="fas fa-phone fa-flip-horizontal"></i>
+                    <span>+61 999 999</span>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-  <section id="intro" class="nav-update" data-nav-update=".navbar-brand">
-    <h1>Kuranda Ngorongoro Lodge</h1>
-    <h2>A Guest House in the rainforest of far North Queensland, Australia</h2>
-  </section>
-  <div class="showMore">
-    <section id="home" class="nav-update" data-nav-update="#homeNav">
-      <img id="home_img" src="img/gate.jpg">
-      <div id="home_txt">
-        <h1>Home</h1>
-        <br>
-        <p>Kuranda Ngorongoro Lodge is located in rainforest and 400 metres above Cairns in the cooler climate of the Kuranda
-          Range. The Lodge is owned and managed by Patrick Dauwe and Sue Schwass. Cairns International airport is only 30
-          minutes away and our mini Ambassador, Fritz the Cockatoo, is ready to welcome you.
-          <br>
-          <br>During your stay you may choose to relax on one or two private verandahs, search for wildlife in the evening with
-          your torch out in the neighbourhood, explore Kuranda, a tourist town, or visit the many interesting places to be
-          found on the Atherton Tablelands, the bird watching capital of Australia. The waterfall circuit, Mareeba Wetlands,
-          Undara Lava Tubes, Chillagoe and some amazing caves are found within easy reach of Kuranda. Back on the property,
-          there is the chance to wander along our bush walk circuit which runs alongside the creek.</p>
-        <div id="btn1" class="expand">Show More</div>
-      </div>
+    <section id="intro" class="nav-update" data-nav-update=".navbar-brand">
+        <h1>Kuranda Ngorongoro Lodge</h1>
+        <h2>A Guest House in the rainforest of far North Queensland, Australia</h2>
     </section>
-    <div class="more">
-      <section id="home_facts" class="more">
-        <p>The Wet Tropics World Heritage area contains:</p>
-        <div id="facts">
-          <div>
-            <p>40%</p>
-            <p>of Australia’s bird species</p>
-          </div>
-          <div>
-            <p>35%</p>
-            <p>of Australia’s mammal species</p>
-          </div>
-          <div>
-            <p>60%</p>
-            <p>Australia’s butterfly species</p>
-          </div>
-          <div>
-            <p>20%</p>
-            <p>of Australia’s reptile species</p>
-          </div>
-          <div>
-            <p>21%</p>
-            <p>of Australia’s cycad species</p>
-          </div>
-          <div>
-            <p>29%</p>
-            <p>of Australia’s frog species</p>
-          </div>
-          <div>
-            <p>40%</p>
-            <p>of Australia’s bird species</p>
-          </div>
-          <div>
-            <p>65%</p>
-            <p>of Australia’s fern species</p>
-          </div>
-          <div>
-            <p>30%</p>
-            <p>of Australia’s orchid species</p>
-          </div>
+    <div class="showMore">
+        <section id="home" class="nav-update" data-nav-update="#homeNav">
+            <img id="home_img" src="img/gate.jpg">
+            <div id="home_txt">
+                <h1>Home</h1>
+                <br>
+                <p>Kuranda Ngorongoro Lodge is located in rainforest and 400 metres above Cairns in the cooler climate of the Kuranda Range. The Lodge is owned and managed by Patrick Dauwe and Sue Schwass. Cairns International airport is only 30 minutes
+                    away and our mini Ambassador, Fritz the Cockatoo, is ready to welcome you.
+                    <br>
+                    <br>During your stay you may choose to relax on one or two private verandahs, search for wildlife in the evening with your torch out in the neighbourhood, explore Kuranda, a tourist town, or visit the many interesting places to be
+                    found on the Atherton Tablelands, the bird watching capital of Australia. The waterfall circuit, Mareeba Wetlands, Undara Lava Tubes, Chillagoe and some amazing caves are found within easy reach of Kuranda. Back on the property, there
+                    is the chance to wander along our bush walk circuit which runs alongside the creek.</p>
+                <div id="btn1" class="expand">Show More</div>
+            </div>
+        </section>
+        <div class="more">
+            <section id="home_facts" class="more">
+                <p>The Wet Tropics World Heritage area contains:</p>
+                <div id="facts">
+                    <div>
+                        <p>40%</p>
+                        <p>of Australia’s bird species</p>
+                    </div>
+                    <div>
+                        <p>35%</p>
+                        <p>of Australia’s mammal species</p>
+                    </div>
+                    <div>
+                        <p>60%</p>
+                        <p>Australia’s butterfly species</p>
+                    </div>
+                    <div>
+                        <p>20%</p>
+                        <p>of Australia’s reptile species</p>
+                    </div>
+                    <div>
+                        <p>21%</p>
+                        <p>of Australia’s cycad species</p>
+                    </div>
+                    <div>
+                        <p>29%</p>
+                        <p>of Australia’s frog species</p>
+                    </div>
+                    <div>
+                        <p>40%</p>
+                        <p>of Australia’s bird species</p>
+                    </div>
+                    <div>
+                        <p>65%</p>
+                        <p>of Australia’s fern species</p>
+                    </div>
+                    <div>
+                        <p>30%</p>
+                        <p>of Australia’s orchid species</p>
+                    </div>
+                </div>
+                <p>The area is home to more than 3000 plant species, 100 species of mammals, 50 species of frogs and more than 370 species of birds. The Wet Tropics has 47 animal species and 227 plant species listed as threatened.
+                    <br>
+                    <br>Regular visitors include Chowchillas, Musky Rat-kangaroos, Striped Possums, Amethystine and Scrub Pythons and Victoria’s Riflebird, one of Australia’s two Birds of Paradise. At night frogs, curlews and pademelons can be seen along
+                    with the occasional python. During the day we always see Brush Turkeys and Orange Footed Scrub Fowl and a multitude of butterflies and a huge variety of birds.</p>
+            </section>
         </div>
-        <br>
-        <br>
-        <p>The area is home to more than 3000 plant species, 100 species of mammals, 50 species of frogs and more than 370 species
-          of birds. The Wet Tropics has 47 animal species and 227 plant species listed as threatened.
-          <br>
-          <br>Regular visitors include Chowchillas, Musky Rat-kangaroos, Striped Possums, Amethystine and Scrub Pythons and Victoria’s
-          Riflebird, one of Australia’s two Birds of Paradise. At night frogs, curlews and pademelons can be seen along with
-          the occasional python. During the day we always see Brush Turkeys and Orange Footed Scrub Fowl and a multitude
-          of butterflies and a huge variety of birds.</p>
-      </section>
-    </div>
 
-  </div>
-  <section id="info" class="nav-update" data-nav-update="#infoNav">
-    <h1>Information</h1>
-    <br>
-    <div>
-      <div>
-        <p>Pick-up Service
-          <p>
-            <p>A pick-up service from the airport or Cairns can be provided if requested, but to travel further afield we recommend
-              hiring a rental car from either the airport or Cairns city.</p>
-      </div>
-      <div>
-        <p>Environment</p>
-        <p>Our management practices are environmentally responsible.</p>
-      </div>
-      <div>
-        <p>Language</p>
-        <p>Patrick speaks fluent English, Dutch, French and a smattering of German, Italian and Spanish.</p>
-      </div>
-      <div>
-        <p>Tourism</p>
-        <p>We have tourist pamphlets available for your use and can suggest places to suit your interests.</p>
-      </div>
-      <div>
-        <p>Wildlife Caregivers</p>
-        <p>We are both wildlife caregivers caring mainly for birds and often have a variety in care at any given time.</p>
-      </div>
-      <div>
-        <p>Facilities</p>
-        <p>Extra facilities include a swimming pool, a pool table, petanque, a pizza oven and a jungle walk along the creek.</p>
-      </div>
-      <div>
-        <p>Atherton Tablelands</p>
-        <p>The Atherton Tablelands is within easy reach and has wonderful food experiences. Coffee, cheese, macadamias, chocolate
-          and native fruit are all here for you to discover and sample. The Bat Hospital in Atherton is especially interesting,
-          but you need to have made a booking to visit.</p>
-      </div>
-      <div>
-        <p>Your Stay</p>
-        <p>Each person has his or her own idea of what they hope to see and do to make their stay enjoyable for them. We are
-          happy to help you relax and enjoy your stay here in this remarkable part of Australia.</p>
-      </div>
     </div>
-  </section>
-  <section id="location" class="nav-update" data-nav-update="#locationNav">
-    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15277.605551355256!2d145.6310605674153!3d-16.806432088429176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6978704c41df4873%3A0x1c33f9b535a60ad!2sKuranda+Ngorongoro+Lodge!5e0!3m2!1sen!2sau!4v1515284949550"
-      frameborder="0" allowfullscreen></iframe>
-    <div>
-      <h1>Location</h1>
-      <p>Kuranda Ngorongoro Lodge is located 3 km from the rainforest village of Kuranda in Far North Queensland, Australia.
-        It is situated not far from the Barron River and close to Kuranda National Park. We offer you the chance to experience
-        nature in a peaceful and tranquil setting and you can be as busy or as relaxed you choose.</p>
-      <h4>The Area</h4>
-      <p>The township of Kuranda itself has much to offer in the way of markets (The Heritage Markets and the Original Kuranda
-        Rainforest Markets). The Barron Falls during the wet is a sight to behold. Travel on the Kuranda Scenic Railway to
-        Freshwater and then return to Kuranda on the Skyrail Rainforest Cableway for a unique view into the native forest.
-        Visit Tjakukai for a sampling of Aboriginal Culture. Bird World Kuranda has one of the best collections of birds
-        in Australia and the Australian Butterfly Sanctuary, the largest free flow butterfly habitat in the country houses
-        more than 1500 butterflies within a garden aviary. Australia’s best known wildlife can be seen at the Koala Gardens
-        and for those interested in bats, BatReach, just off the main street is the place to go. </p>
-    </div>
-  </section>
-  <section id="rates" class="nav-update" data-nav-update="#ratesNav">
-    <h1>Rooms & Rates</h1>
-    <p>
-      <b>The Cottage has the following amenities:</b>
-    </p>
-    <ul>
-      <li>Two bedrooms, one with a Queen-sized bed (Zambian Room) and the other with two Single-sized beds (Zimbabwe Room)</li>
-      <li>Free wifi</li>
-      <li>An en-suite bathroom, with bath and shower, between the two bedrooms with lockable doors</li>
-      <li>A fully-equipped kitchen with refrigerator, microwave oven, 2 hot-plates, basic condiments and tea and coffee making
-        facilities
-      </li>
-      <li>Ceiling fans in the bedroom and portable fan and the lounge/kitchen area</li>
-      <li>Air-conditioning in the King-sized bedroom and lounge area</li>
-      <li>Electric heater and extra blankets for the cooler winter months</li>
-      <li>Fly screens on most windows and doors</li>
-      <li>All linen and towels</li>
-      <li>Reference books on reptiles, birds, butterflies, insects, bats and plants are available in the main house</li>
-      <li>A selection of novels</li>
-      <li>Wheelchair access</li>
-      <li>Television in the lounge</li>
-      <li>Off Street parking</li>
-      <li>Breakfast, either English or Continental, is included</li>
-    </ul>
-    <p>
-      <b>Arrival time: from 2 p.m.
+    <section id="info" class="nav-update" data-nav-update="#infoNav">
+        <h1>Information</h1>
+        <br>
+        <div>
+            <div>
+                <p>Pick-up Service</p>
+                <p>A pick-up service from the airport or Cairns can be provided if requested, but to travel further afield we recommend hiring a rental car from either the airport or Cairns city.</p>
+            </div>
+            <div>
+                <p>Environment</p>
+                <p>Our management practices are environmentally responsible.</p>
+            </div>
+            <div>
+                <p>Language</p>
+                <p>Patrick speaks fluent English, Dutch, French and a smattering of German, Italian and Spanish.</p>
+            </div>
+            <div>
+                <p>Tourism</p>
+                <p>We have tourist pamphlets available for your use and can suggest places to suit your interests.</p>
+            </div>
+            <div>
+                <p>Wildlife Caregivers</p>
+                <p>We are both wildlife caregivers caring mainly for birds and often have a variety in care at any given time.</p>
+            </div>
+            <div>
+                <p>Facilities</p>
+                <p>Extra facilities include a swimming pool, a pool table, petanque, a pizza oven and a jungle walk along the creek.</p>
+            </div>
+            <div>
+                <p>Atherton Tablelands</p>
+                <p>The Atherton Tablelands is within easy reach and has wonderful food experiences. Coffee, cheese, macadamias, chocolate and native fruit are all here for you to discover and sample. The Bat Hospital in Atherton is especially interesting,
+                    but you need to have made a booking to visit.</p>
+            </div>
+            <div>
+                <p>Your Stay</p>
+                <p>Each person has his or her own idea of what they hope to see and do to make their stay enjoyable for them. We are happy to help you relax and enjoy your stay here in this remarkable part of Australia.</p>
+            </div>
+        </div>
+    </section>
+    <section id="location" class="nav-update" data-nav-update="#locationNav">
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15277.605551355256!2d145.6310605674153!3d-16.806432088429176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6978704c41df4873%3A0x1c33f9b535a60ad!2sKuranda+Ngorongoro+Lodge!5e0!3m2!1sen!2sau!4v1515284949550"
+            frameborder="0" allowfullscreen></iframe>
+        <div>
+            <h1>Location</h1>
+            <p>Kuranda Ngorongoro Lodge is located 3 km from the rainforest village of Kuranda in Far North Queensland, Australia. It is situated not far from the Barron River and close to Kuranda National Park. We offer you the chance to experience nature
+                in a peaceful and tranquil setting and you can be as busy or as relaxed you choose.</p>
+                <br>
+            <h4>The Area</h4>
+            <p>The township of Kuranda itself has much to offer in the way of markets (The Heritage Markets and the Original Kuranda Rainforest Markets). The Barron Falls during the wet is a sight to behold. Travel on the Kuranda Scenic Railway to Freshwater
+                and then return to Kuranda on the Skyrail Rainforest Cableway for a unique view into the native forest. Visit Tjakukai for a sampling of Aboriginal Culture. <br><br> Bird World Kuranda has one of the best collections of birds in Australia and the
+                Australian Butterfly Sanctuary, the largest free flow butterfly habitat in the country houses more than 1500 butterflies within a garden aviary. Australia’s best known wildlife can be seen at the Koala Gardens and for those interested
+                in bats, BatReach, just off the main street is the place to go. </p>
+        </div>
+    </section>
+    <section id="rates" class="nav-update" data-nav-update="#ratesNav">
+        <h1>Rooms and Rates</h1>
+        <p>
+            <b>The Cottage has the following amenities:</b>
+        </p>
+        <ul>
+            <li>Two bedrooms, one with a Queen-sized bed (Zambian Room) and the other with two Single-sized beds (Zimbabwe Room)</li>
+            <li>Free wifi</li>
+            <li>An en-suite bathroom, with bath and shower, between the two bedrooms with lockable doors</li>
+            <li>A fully-equipped kitchen with refrigerator, microwave oven, 2 hot-plates, basic condiments and tea and coffee making facilities
+            </li>
+            <li>Ceiling fans in the bedroom and portable fan and the lounge/kitchen area</li>
+            <li>Air-conditioning in the King-sized bedroom and lounge area</li>
+            <li>Electric heater and extra blankets for the cooler winter months</li>
+            <li>Fly screens on most windows and doors</li>
+            <li>All linen and towels</li>
+            <li>Reference books on reptiles, birds, butterflies, insects, bats and plants are available in the main house</li>
+            <li>A selection of novels</li>
+            <li>Wheelchair access</li>
+            <li>Television in the lounge</li>
+            <li>Off Street parking</li>
+            <li>Breakfast, either English or Continental, is included</li>
+        </ul>
+        <p>
+            <b>Arrival time: from 2 p.m.
         <br>Check-out time: 10 a.m. (Please advise if extra time is required)</b>
-    </p>
-    <table>
-      <tr>
-        <th></th>
-        <th>One Night</th>
-        <th>Two Nights</th>
-        <th>3-6 Nights</th>
-        <th>One Week</th>
-      </tr>
-      <tr>
-        <td>Single Guest</td>
-        <td>$125</td>
-        <td>$110/NIGHT</td>
-        <td>$100//NIGHT</td>
-        <td>$815</td>
-      </tr>
-      <tr>
-        <td>Two Guests (1 ROOM)</td>
-        <td>$150</td>
-        <td>$135/NIGHT</td>
-        <td>$125/NIGHT</td>
-        <td>$840</td>
-      </tr>
-      <tr>
-        <td>Three Guests (2 ROOM)</td>
-        <td>$215</td>
-        <td>$200/NIGHT</td>
-        <td>$190/NIGHT</td>
-        <td>$915</td>
-      </tr>
-      <tr>
-        <td>Four Guests (2 ROOM)</td>
-        <td>$240</td>
-        <td>$225/NIGHT</td>
-        <td>$215/NIGHT</td>
-        <td>$940</td>
-      </tr>
-    </table>
-    <p>
-      <b>Terms & Conditions:</b>
-      <br>Check-out time: 10 a.m. (Please advise if extra time is required)
-      <br>Costs are in Australian Dollars (AU$) and includes GST.
-      <br>No pets are allowed.
-      <br>Please note that our Lodge is not a child friendly environment.
-      <br>Smoking is not permitted indoors.
-    </p>
-  </section>
-  <section id="gallery" class="nav-update" data-nav-update="#galleryNav">
-    <h1>Gallery</h1>
-    <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+        </p>
+        <table>
+            <tr>
+                <th></th>
+                <th>One Night</th>
+                <th>Two Nights</th>
+                <th>3-6 Nights</th>
+                <th>One Week</th>
+            </tr>
+            <tr>
+                <td>Single Guest</td>
+                <td>$125</td>
+                <td>$110/NIGHT</td>
+                <td>$100//NIGHT</td>
+                <td>$815</td>
+            </tr>
+            <tr>
+                <td>Two Guests (1 ROOM)</td>
+                <td>$150</td>
+                <td>$135/NIGHT</td>
+                <td>$125/NIGHT</td>
+                <td>$840</td>
+            </tr>
+            <tr>
+                <td>Three Guests (2 ROOM)</td>
+                <td>$215</td>
+                <td>$200/NIGHT</td>
+                <td>$190/NIGHT</td>
+                <td>$915</td>
+            </tr>
+            <tr>
+                <td>Four Guests (2 ROOM)</td>
+                <td>$240</td>
+                <td>$225/NIGHT</td>
+                <td>$215/NIGHT</td>
+                <td>$940</td>
+            </tr>
+        </table>
+        <p>
+            <b>Terms & Conditions:</b>
+            <br>Check-out time: 10 a.m. (Please advise if extra time is required)
+            <br>Costs are in Australian Dollars (AU$) and includes GST.
+            <br>No pets are allowed.
+            <br>Please note that our Lodge is not a child friendly environment.
+            <br>Smoking is not permitted indoors.
+        </p>
+    </section>
+    <section id="gallery" class="nav-update" data-nav-update="#galleryNav">
+        <h1>Gallery</h1>
+        <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-      <figure id="hoverTest" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x683">
+            <figure id="hoverTest" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/bed.jpg" itemprop="contentUrl" data-size="1024x683">
           <img src="img/bed_min.jpg" itemprop="thumbnail" alt="A bed" />
         </a>
-        <figcaption itemprop="caption description">Zambian Bedroom</figcaption>
+                <figcaption itemprop="caption description">Zambian Bedroom</figcaption>
 
-      </figure>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/pool.jpg" itemprop="contentUrl" data-size="1182x665">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/pool.jpg" itemprop="contentUrl" data-size="1182x665">
           <img src="img/pool_min.jpg" itemprop="thumbnail" alt="The pool" />
         </a>
-        <figcaption itemprop="caption description">The Pool</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">The Pool</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x1024">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/gate.jpg" itemprop="contentUrl" data-size="1024x1024">
           <img src="img/gate_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Main Entrance</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Main Entrance</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x682">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/lodge.jpg" itemprop="contentUrl" data-size="1024x682">
           <img src="img/lodge_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">The Cottage</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">The Cottage</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/lodge2.jpg" itemprop="contentUrl" data-size="1024x682">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/lodge2.jpg" itemprop="contentUrl" data-size="1024x682">
           <img src="img/lodge2_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Main House</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Main House</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/rainforest.jpg" itemprop="contentUrl" data-size="1024x768">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/rainforest.jpg" itemprop="contentUrl" data-size="1024x768">
           <img src="img/rainforest.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Rainforest</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Rainforest</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/terrace.jpg" itemprop="contentUrl" data-size="724x1086">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/terrace.jpg" itemprop="contentUrl" data-size="724x1086">
           <img src="img/terrace_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Cottage Terrace</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Cottage Terrace</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/lounge.jpg" itemprop="contentUrl" data-size="1085x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/lounge.jpg" itemprop="contentUrl" data-size="1085x724">
           <img src="img/lounge_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Cottage Lounge</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Cottage Lounge</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/lounge2.jpg" itemprop="contentUrl" data-size="1085x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/lounge2.jpg" itemprop="contentUrl" data-size="1085x724">
           <img src="img/lounge2_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Cottage Lounge</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Cottage Lounge</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/kitchen.jpg" itemprop="contentUrl" data-size="1086x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/kitchen.jpg" itemprop="contentUrl" data-size="1086x724">
           <img src="img/kitchen_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/kitchen2.jpg" itemprop="contentUrl" data-size="1086x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/kitchen2.jpg" itemprop="contentUrl" data-size="1086x724">
           <img src="img/kitchen2_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Cottage Kitchen</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/bed.jpg" itemprop="contentUrl" data-size="1086x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/bed.jpg" itemprop="contentUrl" data-size="1086x724">
           <img src="img/bed2_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Zimbabwaen Bedroom</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Zimbabwaen Bedroom</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/bathroom.jpg" itemprop="contentUrl" data-size="1024x683">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/bathroom.jpg" itemprop="contentUrl" data-size="1024x683">
           <img src="img/bathroom_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Bathroom</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Bathroom</figcaption>
+            </figure>
 
-      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-        <a href="img/pizza.jpg" itemprop="contentUrl" data-size="1085x724">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/pizza.jpg" itemprop="contentUrl" data-size="1085x724">
           <img src="img/pizza_min.jpg" itemprop="thumbnail" alt="Image description" />
         </a>
-        <figcaption itemprop="caption description">Pizza Oven</figcaption>
-      </figure>
+                <figcaption itemprop="caption description">Pizza Oven</figcaption>
+            </figure>
 
-    </div>
-
-    <!-- Root element of PhotoSwipe -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-      <!-- Background of PhotoSwipe.
-             It's a separate element as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
-
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides.
-                PhotoSwipe keeps only 3 of them in the DOM to save memory.
-                Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
-          <div class="pswp__item"></div>
         </div>
 
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
+        <!-- Root element of PhotoSwipe -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-          <div class="pswp__top-bar">
+            <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
 
-            <!--  Controls are self-explanatory. Order can be changed. -->
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
 
-            <div class="pswp__counter"></div>
-
-            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-            <!-- element will get class pswp__preloader--active when preloader is running -->
-            <div class="pswp__preloader">
-              <div class="pswp__preloader__icn">
-                <div class="pswp__preloader__cut">
-                  <div class="pswp__preloader__donut"></div>
+                <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-            <div class="pswp__share-tooltip"></div>
-          </div>
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
 
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
             <i id="arrowLeft" class="fas fa-arrow-left"></i>
           </button>
 
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
             <i id="arrowRight" class="arrow fas fa-arrow-right"></i>
           </button>
 
-          <div class="pswp__caption">
-            <div class="pswp__caption__center"></div>
-          </div>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
+    </section>
+    <section id="links" class="nav-update" data-nav-update="#linksNav">
+    </section>
+    <section id="wildlife" class="nav-update" data-nav-update="#wildlifeNav">
+    </section>
+    <section id="contact" class="nav-update" data-nav-update="#contactNav">
+        <div class="contactInfo">
+            <header>Contact Details & Address</header>
 
-      </div>
-
-    </div>
-  </section>
-  <section id="links" class="nav-update" data-nav-update="#linksNav">
-  </section>
-  <section id="wildlife" class="nav-update" data-nav-update="#wildlifeNav">
-  </section>
-  <section id="contact" class="nav-update" data-nav-update="#contactNav">
-    <div class="contactInfo">
-      <header>Contact Details & Address</header>
-
-    </div>
-  </section>
+        </div>
+    </section>
 
 </body>
 
